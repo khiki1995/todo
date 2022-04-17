@@ -25,3 +25,7 @@ $ docker-compose up
 
 # The project will initialize on  <http://localhost:3000>
 ```
+
+## Documentation
+Import in your postman:
+https://www.postman.com/collections/9646bcb1019387ae74b1
