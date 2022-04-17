@@ -1,0 +1,17 @@
+version: "3"
+services:
+  db:
+    image: 'mongo:latest'
+    ports:
+      - '27017:27017'
+  server:
+    ports:
+      - '3000:3000'
+    environment:
+      - "DB_HOST=db"
+      - "DB_PORT=27017"
+      - "PORT=3000"
+      - "DB_NAME=todo"
+    build:
+      context: .
+      dockerfile: Dockerfile
